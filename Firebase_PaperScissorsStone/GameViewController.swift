@@ -104,59 +104,6 @@ class GameViewController: UIViewController {
         outgoMessageStatusUpdate()
     }
     
-//    func statusUpdate(){
-//        print("==============statusUpdate()===================")
-//        print("myGestureLabel.text: \(myGestureLabel.text)")
-//        print("opponentBuffer: \(opponentBuffer)")
-//
-////        if  opponentBuffer == "new"{
-////            statusLabel.text = "對手邀請新遊戲，請出拳"
-////            setNewGame()
-////            enableGesturesButtons()
-////        }
-//
-//        if  myGestureLabel.text != nil && opponentBuffer == "new"{
-//            statusLabel.text = "等待對手出拳"
-//            disenableGesturesButtons()
-//        }
-//
-//        if  opponentBuffer == "connected"{
-//
-//            if oppoHadConnected == false{
-//                statusLabel.text = "對手已上線，請出拳"
-//                oppoHadConnected = true
-//            }else{
-//                statusLabel.text = "對手邀請新遊戲，請出拳"
-//                setNewGame()
-//            }
-//            enableGesturesButtons()
-//        }
-//
-//        if  gestureEmoji.contains(opponentBuffer ?? ""){
-//            statusLabel.text = "對手已出拳，請出拳"
-//            enableGesturesButtons()
-//        }
-//
-//        if myGestureLabel.text != nil && opponentBuffer == "connected"{
-//            statusLabel.text = "等待對手出拳"
-//            disenableGesturesButtons()
-//        }
-//
-//        if myGestureLabel.text != nil && gestureEmoji.contains(opponentBuffer ?? ""){
-//            opponentGestureLabel.text = opponentBuffer
-//            winningStatus()
-//            disenableGesturesButtons()
-//        }
-//
-//        if opponentBuffer == "disconnected"{
-//            statusLabel.text = "對手離線中，等待\(opponent)上線"
-//            oppoHadConnected = false
-//            setNewGame()
-//            disenableGesturesButtons()
-//        }
-//
-//    }
-    
     func incomeMessageStatusUpdate(){
         print("incomeMessageStatusUpdate()")
         if opponentBuffer == "connected"{
